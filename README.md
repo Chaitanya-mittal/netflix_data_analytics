@@ -2,7 +2,10 @@
 
 ![NETFLIX_LOGO](https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940)
 
-# 17 Business Problems
+
+
+
+
 
 ## Dataset
 
@@ -11,6 +14,28 @@ The data for this project is sourced from the Kaggle dataset:
 - **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
 
+## Schema
+
+```sql
+DROP TABLE IF EXISTS netflix;
+CREATE TABLE netflix
+(
+    show_id      VARCHAR(5),
+    type         VARCHAR(10),
+    title        VARCHAR(250),
+    director     VARCHAR(550),
+    casts        VARCHAR(1050),
+    country      VARCHAR(550),
+    date_added   VARCHAR(55),
+    release_year INT,
+    rating       VARCHAR(15),
+    duration     VARCHAR(15),
+    listed_in    VARCHAR(250),
+    description  VARCHAR(550)
+);
+```
+
+## Business Problems and Solutions
 
 ### 0. View all data
 
